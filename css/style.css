@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Navigation */
+
+nav {
+    background-color: #F9FAFA;
+    padding: 1rem 1rem;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    margin: 0 15rem;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+nav li {
+    padding: 2rem 2rem;
+    flex: 1;
+}
+
+nav a {
+    text-decoration: none;
+    color: #565657;
+    font-weight: 700;
+
+}
+
+nav a:hover {
+    color: #8b3627;
+    transition: .2s;
+}
+
+nav a.active {
+    color:#8b3627;
+}
+
+/* End Navigation */
+
+
+.wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 94vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/header.jpeg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+.wrapper h1, .wrapper h2 {
+    color: #fff;
+    font-weight: 100;
+    margin: 1rem 1rem;
+}
+
+.wrapper h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size:4rem;
+}
+
+.wrapper h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.wrapper p {
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+
+/* RSVP Button */
+.btn-rsvp {
+    display: block;
+    font-size: .8rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: #b07df1;
+    padding: 1rem 1rem;
+
+}
+
+.btn-rsvp:hover {
+    background-color: #bb8df7;
+    transition: .4s;
+}
+
+/* End RSVP */
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1rem;
+    font-size: .8rem;
+    color: #fff;
+    background-color: #2E2E2E;
+}
+/* Media Queries */
+@media all and (max-width: 980px){
+  
+    nav li {
+        padding: 1rem 1rem;
+        flex: 1;
+    }
+    .wrapper {
+        height: 90vh;
+
+    }
+    .wrapper h1, .wrapper h2 {
+        font-size: 4rem;
+        padding: 0;
+        margin: 0;
+    }    
+}
+
+@media all and (max-width: 810px) {
+    
+    nav li {
+        padding: 1rem 1rem;
+        margin: 0;
+        flex: 1;
+    }
+    .wrapper {
+        height: 80vh;
+    }
+    .wrapper h1, .wrapper h2 {
+        font-size: 3rem;
+    }
+
+}
+
+@media all and (max-width: 620px) {
+
+
+    nav li {
+       padding: 1rem 1rem;
+    }
+
+    .wrapper h1, .wrapper h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media all and (max-width: 520px) {
+    
+    nav ul {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    nav li {
+        flex: 1  1 100%;
+        padding: 1rem 1rem;
+    }
+    .wrapper {
+        text-align: center;
+        flex: none;
+    }
+
+
+}

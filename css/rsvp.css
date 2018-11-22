@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Navigation */
+
+nav {
+    background-color: #F9FAFA;
+    padding: 1rem 1rem;
+}
+
+nav ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    margin: 0 15rem;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+nav li {
+    padding: 2rem 2rem;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #565657;
+    font-weight: 700;
+
+}
+
+nav a:hover {
+    color: #8b3627;
+    transition: .2s;
+}
+
+nav a.active {
+    color:#8b3627;
+}
+
+/* End Navigation */
+
+.wrapper {
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:35vh;
+}
+
+.wrapper h1 {
+    padding: 2rem 0;
+}
+form {
+    width: 50%;
+}
+
+input {
+    font-size: 100%;
+}
+
+fieldset {
+    padding: 1rem 1rem;
+}
+
+input[type="name"],
+input[type="email"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    height: 40px;
+    outline: none;
+}
+
+#button{
+    display: block;
+    box-sizing: border-box;
+    width:100%;
+    margin-top: 1rem;
+    padding: 1rem .5rem;
+    background-color: #2C3E50;
+    outline: none;
+    color: #F9FAFA;
+    text-transform: uppercase;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1rem;
+    font-size: .8rem;
+    color: #fff;
+    background-color: #2E2E2E;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 600px) {
+
+    nav ul {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        margin: 0 1rem;
+    }
+
+    nav ul li  {
+        padding: 1rem 1rem;
+
+    }  
+    nav ul li a {
+        display: block;
+    }  
+
+    .wrapper {
+        text-align: center;
+        font-size: .8rem;
+    }
+    
+    form {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav ul {
+        flex-flow: column;
+    }
+
+    .wrapper {
+        text-align: center;
+        font-size: .8rem;
+    }
+    
+    form {
+        width: 100%;
+        font-size: 1rem;
+    }
+   
+}
